@@ -3,6 +3,7 @@ package com.example.demo;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+
 @RestController
 public class HelloController {
 
@@ -16,5 +17,16 @@ public class HelloController {
 		
 		return "Greetings from Spring Boot!";
 	}
+
+	public String convertCentigradetoFahrenheit(double centigrade) {
+		double fahrenheit = (centigrade * 9 / 5) + 32;
+		return String.valueOf(fahrenheit);
+	}
+
+	
+
+	
+
+
 
 }
