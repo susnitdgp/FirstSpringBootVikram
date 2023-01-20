@@ -1,7 +1,8 @@
 # Compiled class file
 *.class
 
-.target/
+# Target Folder ignored by git
+/target
 
 # Log file
 *.log
